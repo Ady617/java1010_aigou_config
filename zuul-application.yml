@@ -1,13 +1,13 @@
 spring:
   profiles:
-    active:dev
+    active: dev
 ---
 server:
   port: 9527
 spring:
   application:
     name: MICROSERVICE-ZUUL-GATEWAY
-  profiles:dev
+  profiles: dev
 eureka:
   client:
     service-url:
@@ -29,7 +29,7 @@ server:
 spring:
   application:
     name: MICROSERVICE-ZUUL-GATEWAY-TEST
-  profiles:test
+  profiles: test
 eureka:
   client:
     service-url:
