@@ -8,6 +8,10 @@ server:
 spring:
   application:
     name: COMMON-PROVIDER
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300 #java的客户端要用9300 服务器地址
   profiles: dev
 eureka:
   instance:
@@ -23,6 +27,10 @@ server:
 spring:
   application:
     name: COMMON-PROVIDER-TEST
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300 #java的客户端要用9300 服务器地址
   profiles: test
 eureka:
   instance:
